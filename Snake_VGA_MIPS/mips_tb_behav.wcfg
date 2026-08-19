@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mips_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="general" />
+            <top_module name="glbl" />
+            <top_module name="mips_tb" />
+            <top_module name="types_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="71.000001 us"></ZoomEndTime>
+      <Cursor1Time time="10.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="145"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="47" />
+   <wvobject fp_name="/mips_tb/clk50mhz" type="logic">
+      <obj_property name="ElementShortName">clk50mhz</obj_property>
+      <obj_property name="ObjectShortName">clk50mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/reset_boton" type="logic">
+      <obj_property name="ElementShortName">reset_boton</obj_property>
+      <obj_property name="ObjectShortName">reset_boton</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/salida" type="array">
+      <obj_property name="ElementShortName">salida[3:0]</obj_property>
+      <obj_property name="ObjectShortName">salida[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/botones" type="array">
+      <obj_property name="ElementShortName">botones[3:0]</obj_property>
+      <obj_property name="ObjectShortName">botones[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_pc/s" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s[31:0]</obj_property>
+      <obj_property name="label">pc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/tick" type="logic">
+      <obj_property name="ElementShortName">tick</obj_property>
+      <obj_property name="ObjectShortName">tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/llaves" type="array">
+      <obj_property name="ElementShortName">llaves[3:0]</obj_property>
+      <obj_property name="ObjectShortName">llaves[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_reg/reg" type="array">
+      <obj_property name="ElementShortName">reg[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/rx" type="logic">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/tx" type="logic">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/atn" type="logic">
+      <obj_property name="ElementShortName">atn</obj_property>
+      <obj_property name="ObjectShortName">atn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/TbClock" type="logic">
+      <obj_property name="ElementShortName">TbClock</obj_property>
+      <obj_property name="ObjectShortName">TbClock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/TbSimEnded" type="logic">
+      <obj_property name="ElementShortName">TbSimEnded</obj_property>
+      <obj_property name="ObjectShortName">TbSimEnded</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/TbPeriod" type="other">
+      <obj_property name="ElementShortName">TbPeriod</obj_property>
+      <obj_property name="ObjectShortName">TbPeriod</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/head_x" type="array">
+      <obj_property name="ElementShortName">head_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">head_x[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/head_y" type="array">
+      <obj_property name="ElementShortName">head_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">head_y[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/cola_len" type="array">
+      <obj_property name="ElementShortName">cola_len[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cola_len[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/fruit_x" type="array">
+      <obj_property name="ElementShortName">fruit_x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fruit_x[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/fruit_y" type="array">
+      <obj_property name="ElementShortName">fruit_y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fruit_y[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/flags_in" type="array">
+      <obj_property name="ElementShortName">flags_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">flags_in[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/flags_out" type="array">
+      <obj_property name="ElementShortName">flags_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">flags_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/hsync" type="logic">
+      <obj_property name="ElementShortName">hsync</obj_property>
+      <obj_property name="ObjectShortName">hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/vsync" type="logic">
+      <obj_property name="ElementShortName">vsync</obj_property>
+      <obj_property name="ObjectShortName">vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/rgb" type="array">
+      <obj_property name="ElementShortName">rgb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/hc" type="array">
+      <obj_property name="ElementShortName">hc[10:0]</obj_property>
+      <obj_property name="ObjectShortName">hc[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/vc" type="array">
+      <obj_property name="ElementShortName">vc[10:0]</obj_property>
+      <obj_property name="ObjectShortName">vc[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/head_x_s" type="array">
+      <obj_property name="ElementShortName">head_x_s[5:0]</obj_property>
+      <obj_property name="ObjectShortName">head_x_s[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/head_y_s" type="array">
+      <obj_property name="ElementShortName">head_y_s[5:0]</obj_property>
+      <obj_property name="ObjectShortName">head_y_s[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/fruit_x_s" type="array">
+      <obj_property name="ElementShortName">fruit_x_s[5:0]</obj_property>
+      <obj_property name="ObjectShortName">fruit_x_s[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/fruit_y_s" type="array">
+      <obj_property name="ElementShortName">fruit_y_s[5:0]</obj_property>
+      <obj_property name="ObjectShortName">fruit_y_s[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/mover" type="logic">
+      <obj_property name="ElementShortName">mover</obj_property>
+      <obj_property name="ObjectShortName">mover</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/colaX" type="array">
+      <obj_property name="ElementShortName">colaX[0:63][5:0]</obj_property>
+      <obj_property name="ObjectShortName">colaX[0:63][5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/colaY" type="array">
+      <obj_property name="ElementShortName">colaY[0:63][5:0]</obj_property>
+      <obj_property name="ObjectShortName">colaY[0:63][5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/cola_len_s" type="other">
+      <obj_property name="ElementShortName">cola_len_s</obj_property>
+      <obj_property name="ObjectShortName">cola_len_s</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/fruta_generada" type="logic">
+      <obj_property name="ElementShortName">fruta_generada</obj_property>
+      <obj_property name="ObjectShortName">fruta_generada</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/colision_detectada" type="logic">
+      <obj_property name="ElementShortName">colision_detectada</obj_property>
+      <obj_property name="ObjectShortName">colision_detectada</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/rand_x" type="logic">
+      <obj_property name="ElementShortName">rand_x</obj_property>
+      <obj_property name="ObjectShortName">rand_x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/rand_y" type="logic">
+      <obj_property name="ElementShortName">rand_y</obj_property>
+      <obj_property name="ObjectShortName">rand_y</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/read_x" type="logic">
+      <obj_property name="ElementShortName">read_x</obj_property>
+      <obj_property name="ObjectShortName">read_x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/read_y" type="logic">
+      <obj_property name="ElementShortName">read_y</obj_property>
+      <obj_property name="ObjectShortName">read_y</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/done_x" type="logic">
+      <obj_property name="ElementShortName">done_x</obj_property>
+      <obj_property name="ObjectShortName">done_x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/done_y" type="logic">
+      <obj_property name="ElementShortName">done_y</obj_property>
+      <obj_property name="ObjectShortName">done_y</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/rnd_x" type="array">
+      <obj_property name="ElementShortName">rnd_x[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rnd_x[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/rnd_y" type="array">
+      <obj_property name="ElementShortName">rnd_y[5:0]</obj_property>
+      <obj_property name="ObjectShortName">rnd_y[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/CD" type="other">
+      <obj_property name="ElementShortName">CD</obj_property>
+      <obj_property name="ObjectShortName">CD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mips_tb/dut/Inst_md_io/Inst_VGA/MAX_COLA" type="other">
+      <obj_property name="ElementShortName">MAX_COLA</obj_property>
+      <obj_property name="ObjectShortName">MAX_COLA</obj_property>
+   </wvobject>
+</wave_config>

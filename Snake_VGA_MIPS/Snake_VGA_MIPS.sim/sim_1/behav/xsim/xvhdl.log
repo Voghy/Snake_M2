@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md_io.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'md_io'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/new/snake_vga.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'snake_vga_display'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/new/vga_demo_snake_btn.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga_demo_snake_btn'

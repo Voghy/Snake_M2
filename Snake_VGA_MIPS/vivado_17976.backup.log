@@ -1,0 +1,110 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sun Jun  1 11:51:33 2025
+# Process ID         : 17976
+# Current directory  : C:/vivado/Snake_VGA_MIPS
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent9592 C:\vivado\Snake_VGA_MIPS\Snake_VGA_MIPS.xpr
+# Log file           : C:/vivado/Snake_VGA_MIPS/vivado.log
+# Journal file       : C:/vivado/Snake_VGA_MIPS\vivado.jou
+# Running On         : Voghy
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+# CPU Frequency      : 2208 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 51382 MB
+# Swap memory        : 3221 MB
+# Total Virtual      : 54603 MB
+# Available Virtual  : 34373 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Vivado/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:14 . Memory (MB): peak = 1187.777 ; gain = 76.340
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-15:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1212.105 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279A430D0A
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/utils_1/imports/synth_1/vga_sync_demo.dcp with file C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1/mips_tb.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1
+
+launch_runs synth_1 -jobs 12
+[Sun Jun  1 11:53:22 2025] Launched synth_1...
+Run output will be captured here: C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Sun Jun  1 11:55:59 2025] Launched impl_1...
+Run output will be captured here: C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/impl_1/runme.log
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+set_property top top_snake_btn_sw [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/utils_1/imports/synth_1/vga_sync_demo.dcp with file C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1/mips_tb.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1
+
+launch_runs synth_1 -jobs 12
+[Sun Jun  1 12:02:56 2025] Launched synth_1...
+Run output will be captured here: C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Sun Jun  1 12:05:16 2025] Launched impl_1...
+Run output will be captured here: C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/utils_1/imports/synth_1/vga_sync_demo.dcp with file C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1/top_snake_btn_sw.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1
+
+launch_runs synth_1 -jobs 12
+[Sun Jun  1 12:07:29 2025] Launched synth_1...
+Run output will be captured here: C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Sun Jun  1 12:09:59 2025] Launched impl_1...
+Run output will be captured here: C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Sun Jun  1 12:13:22 2025] Launched impl_1...
+Run output will be captured here: C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/impl_1/top_snake_btn_sw.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/impl_1/top_snake_btn_sw.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210279A430D0A
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  1 15:09:28 2025...

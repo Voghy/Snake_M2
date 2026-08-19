@@ -1,0 +1,550 @@
+
+*** Running vivado
+    with args -log mips.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu Jun  5 14:54:30 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source mips.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/utils_1/imports/synth_1/vga_sync_demo.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/utils_1/imports/synth_1/vga_sync_demo.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top mips -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6676
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1062.777 ; gain = 469.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:58]
+INFO: [Synth 8-3491] module 'clk_wiz_1' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1/.Xil/Vivado-1416-Voghy/realtime/clk_wiz_1_stub.vhdl:6' bound to instance 'inst_divisor' of component 'clk_wiz_1' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:335]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_1' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1/.Xil/Vivado-1416-Voghy/realtime/clk_wiz_1_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'prog' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/prog.vhd:34' bound to instance 'inst_prog' of component 'prog' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:343]
+INFO: [Synth 8-638] synthesizing module 'prog' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/prog.vhd:48]
+INFO: [Synth 8-3491] module 'control_prog' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/control_prog.vhd:34' bound to instance 'Inst_control_prog' of component 'control_prog' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/prog.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'control_prog' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/control_prog.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'control_prog' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/control_prog.vhd:54]
+INFO: [Synth 8-3491] module 'uart_tx' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/uart_tx.vhd:32' bound to instance 'inst_uart_tx' of component 'uart_tx' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/prog.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'uart_tx' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/uart_tx.vhd:41]
+INFO: [Synth 8-226] default block is never used [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/uart_tx.vhd:177]
+INFO: [Synth 8-256] done synthesizing module 'uart_tx' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/uart_tx.vhd:41]
+INFO: [Synth 8-3491] module 'uart_rx' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/uart_rx.vhd:32' bound to instance 'inst_uart_rx' of component 'uart_rx' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/prog.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'uart_rx' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/uart_rx.vhd:40]
+INFO: [Synth 8-226] default block is never used [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/uart_rx.vhd:127]
+INFO: [Synth 8-226] default block is never used [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/uart_rx.vhd:171]
+INFO: [Synth 8-256] done synthesizing module 'uart_rx' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/uart_rx.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'prog' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/prog.vhd:48]
+INFO: [Synth 8-3491] module 'pc' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/pc.vhd:30' bound to instance 'Inst_pc' of component 'pc' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:362]
+INFO: [Synth 8-638] synthesizing module 'pc' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/pc.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'pc' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/pc.vhd:37]
+INFO: [Synth 8-3491] module 'suma_4' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/suma_4.vhd:30' bound to instance 'Inst_suma_4' of component 'suma_4' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:368]
+INFO: [Synth 8-638] synthesizing module 'suma_4' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/suma_4.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'suma_4' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/suma_4.vhd:35]
+INFO: [Synth 8-3491] module 'mi' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mi.vhd:34' bound to instance 'Inst_mi' of component 'mi' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:372]
+INFO: [Synth 8-638] synthesizing module 'mi' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mi.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'mi' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mi.vhd:46]
+INFO: [Synth 8-3491] module 'mux5_4a1' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mux5_4a1.vhd:32' bound to instance 'Inst_mux5_4a1' of component 'mux5_4a1' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:382]
+INFO: [Synth 8-638] synthesizing module 'mux5_4a1' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mux5_4a1.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'mux5_4a1' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mux5_4a1.vhd:41]
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/reg.vhd:33' bound to instance 'Inst_reg' of component 'reg' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:390]
+INFO: [Synth 8-638] synthesizing module '\reg ' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/reg.vhd:45]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/reg.vhd:45]
+INFO: [Synth 8-3491] module 'shift_left16' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/shift_left16.vhd:30' bound to instance 'Inst_shift_left16' of component 'shift_left16' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:400]
+INFO: [Synth 8-638] synthesizing module 'shift_left16' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/shift_left16.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'shift_left16' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/shift_left16.vhd:35]
+INFO: [Synth 8-3491] module 'alu' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/alu.vhd:31' bound to instance 'Inst_alu' of component 'alu' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:404]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/alu.vhd:42]
+INFO: [Synth 8-3491] module 'alu_parcial' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/alu_parcial.vhd:36' bound to instance 'Inst_alu_parcial' of component 'alu_parcial' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/alu.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'alu_parcial' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/alu_parcial.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'alu_parcial' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/alu_parcial.vhd:43]
+INFO: [Synth 8-3491] module 'barrel_shifter' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/barrel_shifter.vhd:34' bound to instance 'Inst_barrel_shifter' of component 'barrel_shifter' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/alu.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'barrel_shifter' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/barrel_shifter.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'barrel_shifter' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/barrel_shifter.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'alu' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/alu.vhd:42]
+INFO: [Synth 8-3491] module 'exten_signo_cero' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/exten_signo_cero.vhd:31' bound to instance 'Inst_exten_signo_cero' of component 'exten_signo_cero' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:412]
+INFO: [Synth 8-638] synthesizing module 'exten_signo_cero' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/exten_signo_cero.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'exten_signo_cero' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/exten_signo_cero.vhd:37]
+INFO: [Synth 8-3491] module 'control_branch' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/control_branch.vhd:30' bound to instance 'Inst_control_branch' of component 'control_branch' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:417]
+INFO: [Synth 8-638] synthesizing module 'control_branch' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/control_branch.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'control_branch' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/control_branch.vhd:37]
+INFO: [Synth 8-3491] module 'md_io' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md_io.vhd:4' bound to instance 'Inst_md_io' of component 'md_io' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:423]
+INFO: [Synth 8-638] synthesizing module 'md_io' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md_io.vhd:26]
+INFO: [Synth 8-3491] module 'entrada' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/entrada.vhd:32' bound to instance 'Inst_entrada' of component 'entrada' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md_io.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'entrada' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/entrada.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'entrada' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/entrada.vhd:38]
+INFO: [Synth 8-3491] module 'decodificador' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/decodificador.vhd:32' bound to instance 'Inst_decodificador' of component 'decodificador' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md_io.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'decodificador' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/decodificador.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'decodificador' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/decodificador.vhd:42]
+INFO: [Synth 8-3491] module 'md' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md.vhd:37' bound to instance 'Inst_md' of component 'md' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md_io.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'md' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md.vhd:51]
+INFO: [Synth 8-226] default block is never used [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md.vhd:86]
+INFO: [Synth 8-226] default block is never used [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md.vhd:108]
+INFO: [Synth 8-226] default block is never used [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md.vhd:150]
+INFO: [Synth 8-256] done synthesizing module 'md' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md.vhd:51]
+INFO: [Synth 8-3491] module 'salida_par' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/salida_par.vhd:32' bound to instance 'Inst_salida_par' of component 'salida_par' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md_io.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'salida_par' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/salida_par.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'salida_par' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/salida_par.vhd:41]
+	Parameter CD bound to: 16 - type: integer 
+	Parameter MAX_COLA bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'vga_demo_snake_btn' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/new/vga_demo_snake_btn.vhd:9' bound to instance 'Inst_VGA' of component 'vga_demo_snake_btn' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md_io.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'vga_demo_snake_btn' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/new/vga_demo_snake_btn.vhd:31]
+	Parameter CD bound to: 16 - type: integer 
+	Parameter MAX_COLA bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'vga_sync_demo' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/new/vga_sync_demo.vhd:20]
+	Parameter CD bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'frame_counter' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/new/frame_counter.vhd:22]
+	Parameter HMAX bound to: 800 - type: integer 
+	Parameter VMAX bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'frame_counter' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/new/frame_counter.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync_demo' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/new/vga_sync_demo.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'snake_vga_display' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/new/snake_vga.vhd:28]
+	Parameter CD bound to: 16 - type: integer 
+	Parameter MAX_COLA bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'snake_vga_display' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/new/snake_vga.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'randomizador' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/new/random.vhd:21]
+	Parameter N bound to: 64 - type: integer 
+	Parameter defaultValue bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'randomizador' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/new/random.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'randomizador__parameterized0' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/new/random.vhd:21]
+	Parameter N bound to: 48 - type: integer 
+	Parameter defaultValue bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'randomizador__parameterized0' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/new/random.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'vga_demo_snake_btn' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/new/vga_demo_snake_btn.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'md_io' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/md_io.vhd:26]
+INFO: [Synth 8-3491] module 'mux32' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mux32.vhd:31' bound to instance 'Inst_mux32_branch' of component 'mux32' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:440]
+INFO: [Synth 8-638] synthesizing module 'mux32' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mux32.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'mux32' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mux32.vhd:38]
+INFO: [Synth 8-3491] module 'mux32_4a1' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mux32_4a1.vhd:32' bound to instance 'Inst_mux32_4a1_jump' of component 'mux32_4a1' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:446]
+INFO: [Synth 8-638] synthesizing module 'mux32_4a1' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mux32_4a1.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'mux32_4a1' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mux32_4a1.vhd:41]
+INFO: [Synth 8-3491] module 'mux32_4a1' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mux32_4a1.vhd:32' bound to instance 'Inst_mux32_4a1_mem' of component 'mux32_4a1' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:454]
+INFO: [Synth 8-3491] module 'mux32' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mux32.vhd:31' bound to instance 'Inst_mux32_lui' of component 'mux32' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:462]
+INFO: [Synth 8-3491] module 'mux32' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mux32.vhd:31' bound to instance 'Inst_mux32_ALU' of component 'mux32' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:468]
+INFO: [Synth 8-3491] module 'shift_left' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/shift_left.vhd:30' bound to instance 'Inst_shift_left' of component 'shift_left' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:474]
+INFO: [Synth 8-638] synthesizing module 'shift_left' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/shift_left.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'shift_left' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/shift_left.vhd:35]
+INFO: [Synth 8-3491] module 'shift_left_j' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/shift_left_j.vhd:32' bound to instance 'Inst_shift_left_jump' of component 'shift_left_j' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:478]
+INFO: [Synth 8-638] synthesizing module 'shift_left_j' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/shift_left_j.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'shift_left_j' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/shift_left_j.vhd:37]
+INFO: [Synth 8-3491] module 'sumador32' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/sumador32.vhd:30' bound to instance 'Inst_sumador32' of component 'sumador32' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:483]
+INFO: [Synth 8-638] synthesizing module 'sumador32' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/sumador32.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'sumador32' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/sumador32.vhd:36]
+INFO: [Synth 8-3491] module 'alu_control' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/alu_control.vhd:30' bound to instance 'Inst_alu_control' of component 'alu_control' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:488]
+INFO: [Synth 8-638] synthesizing module 'alu_control' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/alu_control.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'alu_control' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/alu_control.vhd:36]
+INFO: [Synth 8-3491] module 'JR_detect' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/JR_detect.vhd:32' bound to instance 'Inst_jr_detect' of component 'JR_detect' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:493]
+INFO: [Synth 8-638] synthesizing module 'JR_detect' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/JR_detect.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'JR_detect' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/JR_detect.vhd:37]
+INFO: [Synth 8-3491] module 'control1' declared at 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/control1.vhd:30' bound to instance 'Inst_control1' of component 'control1' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:497]
+INFO: [Synth 8-638] synthesizing module 'control1' [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/control1.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'control1' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/control1.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'mips' (0#1) [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/MIPS-2023/mips.vhd:58]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/sources_1/imports/new/random.vhd:57]
+WARNING: [Synth 8-7129] Port clk in module snake_vga_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port head_x[7] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port head_x[6] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port head_y[7] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port head_y[6] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[7] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[6] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[5] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[4] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[3] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[2] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[1] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[0] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags_in[7] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags_in[6] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags_in[5] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags_in[4] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags_in[3] in module vga_demo_snake_btn is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1245.281 ; gain = 651.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1245.281 ; gain = 651.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1245.281 ; gain = 651.793
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1245.281 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'inst_divisor'
+Finished Parsing XDC File [c:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc] for cell 'inst_divisor'
+Parsing XDC File [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/constrs_1/new/constrain_clean.xdc]
+Finished Parsing XDC File [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/constrs_1/new/constrain_clean.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/constrs_1/new/constrain_clean.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mips_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mips_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1331.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1331.766 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1331.766 ; gain = 738.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1331.766 ; gain = 738.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.gen/sources_1/ip/clk_wiz_1/clk_wiz_1/clk_wiz_1_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_divisor. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1331.766 ; gain = 738.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control_prog'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'fruit_state_reg' in module 'vga_demo_snake_btn'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          st1_esperaatn0 |           0000000000000000000001 |                            00000
+          st2_esperaatn1 |           0000000000000000000010 |                            00001
+       st3_esperacomando |           0000000000000000000100 |                            00010
+         st4_c_enviatam1 |           0000000000000000001000 |                            00011
+   st5_c_esperaenviatam1 |           0000000000000000010000 |                            00100
+         st6_c_enviatam2 |           0000000000000000100000 |                            00101
+   st7_c_esperaenviatam2 |           0000000000000001000000 |                            00110
+        st8_p_esperatam1 |           0000000000000010000000 |                            00111
+        st9_p_esperatam2 |           0000000000000100000000 |                            01000
+      st10_p_recibedatos |           0000000000001000000000 |                            01001
+        st11_p_escribemi |           0000000000010000000000 |                            01010
+       st12_p_enviarespc |           0000000000100000000000 |                            01011
+ st13_p_esperaenviarespc |           0000000001000000000000 |                            01100
+       st14_v_esperatam1 |           0000000010000000000000 |                            01101
+       st15_v_esperatam2 |           0000000100000000000000 |                            01110
+      st16_v_recibedatos |           0000001000000000000000 |                            01111
+       st17_v_verificami |           0000010000000000000000 |                            10000
+      st18_v_reciberesto |           0000100000000000000000 |                            10001
+       st19_v_enviarespe |           0001000000000000000000 |                            10010
+ st20_v_esperaenviarespe |           0010000000000000000000 |                            10011
+       st21_v_enviarespc |           0100000000000000000000 |                            10100
+ st22_v_esperaenviarespc |           1000000000000000000000 |                            10101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'control_prog'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                st1_idle |                               00 |                               00
+               st2_start |                               01 |                               01
+               st3_datos |                               10 |                               10
+                st4_stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                st1_idle |                               00 |                               00
+               st2_start |                               01 |                               01
+               st3_datos |                               10 |                               10
+                st4_stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+             wait_random |                               01 |                               01
+                validate |                               10 |                               10
+                    done |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fruit_state_reg' using encoding 'sequential' in module 'vga_demo_snake_btn'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1331.766 ; gain = 738.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   3 Input   12 Bit       Adders := 128   
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               11 Bit    Registers := 4     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 132   
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---RAMs : 
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
+	             1024 Bit	(128 X 8 bit)          RAMs := 4     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 11    
+	   4 Input   32 Bit        Muxes := 4     
+	   3 Input   32 Bit        Muxes := 2     
+	   6 Input   32 Bit        Muxes := 1     
+	  22 Input   22 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 19    
+	   3 Input   22 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 5     
+	   5 Input   16 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 2     
+	  22 Input    8 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 2     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 263   
+	   4 Input    6 Bit        Muxes := 130   
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 10    
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 667   
+	   4 Input    1 Bit        Muxes := 94    
+	  22 Input    1 Bit        Muxes := 14    
+	   3 Input    1 Bit        Muxes := 4     
+	   7 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port clk in module snake_vga_display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port head_x[7] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port head_x[6] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port head_y[7] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port head_y[6] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[7] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[6] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[5] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[4] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[3] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[2] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[1] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port cola_len[0] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags_in[7] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags_in[6] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags_in[5] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags_in[4] in module vga_demo_snake_btn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port flags_in[3] in module vga_demo_snake_btn is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 1457.629 ; gain = 864.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives       | 
++------------+-------------------+-----------+----------------------+------------------+
+|Inst_reg    | reg_reg           | Implied   | 32 x 32              | RAM32M x 12      | 
+|Inst_md_io  | Inst_md/mem11_reg | Implied   | 128 x 8              | RAM128X1S x 8    | 
+|Inst_md_io  | Inst_md/mem10_reg | Implied   | 128 x 8              | RAM128X1S x 8    | 
+|Inst_md_io  | Inst_md/mem01_reg | Implied   | 128 x 8              | RAM128X1S x 8    | 
+|Inst_md_io  | Inst_md/mem00_reg | Implied   | 128 x 8              | RAM128X1S x 8    | 
+|mips        | Inst_mi/mi_reg    | Implied   | 512 x 32             | RAM128X1D x 128  | 
++------------+-------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:29 ; elapsed = 00:01:32 . Memory (MB): peak = 1457.629 ; gain = 864.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:36 . Memory (MB): peak = 1487.336 ; gain = 893.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives       | 
++------------+-------------------+-----------+----------------------+------------------+
+|Inst_reg    | reg_reg           | Implied   | 32 x 32              | RAM32M x 12      | 
+|Inst_md_io  | Inst_md/mem11_reg | Implied   | 128 x 8              | RAM128X1S x 8    | 
+|Inst_md_io  | Inst_md/mem10_reg | Implied   | 128 x 8              | RAM128X1S x 8    | 
+|Inst_md_io  | Inst_md/mem01_reg | Implied   | 128 x 8              | RAM128X1S x 8    | 
+|Inst_md_io  | Inst_md/mem00_reg | Implied   | 128 x 8              | RAM128X1S x 8    | 
+|mips        | Inst_mi/mi_reg    | Implied   | 512 x 32             | RAM128X1D x 128  | 
++------------+-------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 1574.367 ; gain = 980.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1673.191 ; gain = 1079.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:46 ; elapsed = 00:01:49 . Memory (MB): peak = 1673.191 ; gain = 1079.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:47 ; elapsed = 00:01:51 . Memory (MB): peak = 1673.191 ; gain = 1079.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:47 ; elapsed = 00:01:51 . Memory (MB): peak = 1673.191 ; gain = 1079.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 1673.191 ; gain = 1079.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 1673.191 ; gain = 1079.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_1     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |clk_wiz_1_bbox |     1|
+|2     |CARRY4         |  1032|
+|3     |LUT1           |   422|
+|4     |LUT2           |  1053|
+|5     |LUT3           |   761|
+|6     |LUT4           |  1812|
+|7     |LUT5           |   822|
+|8     |LUT6           |  1996|
+|9     |MUXF7          |     5|
+|10    |RAM128X1D      |   128|
+|11    |RAM128X1S      |    32|
+|12    |RAM32M         |    10|
+|13    |RAM32X1D       |     4|
+|14    |FDRE           |  1190|
+|15    |FDSE           |     5|
+|16    |IBUF           |    11|
+|17    |OBUF           |    23|
++------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 1673.191 ; gain = 1079.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:33 ; elapsed = 00:01:48 . Memory (MB): peak = 1673.191 ; gain = 993.219
+Synthesis Optimization Complete : Time (s): cpu = 00:01:48 ; elapsed = 00:01:51 . Memory (MB): peak = 1673.191 ; gain = 1079.703
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1683.152 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1211 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1686.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 174 instances were transformed.
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 128 instances
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete | Checksum: 9cb58c05
+INFO: [Common 17-83] Releasing license: Synthesis
+140 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:55 ; elapsed = 00:02:01 . Memory (MB): peak = 1686.848 ; gain = 1307.547
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1686.848 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1/mips.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file mips_utilization_synth.rpt -pb mips_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  5 14:56:38 2025...

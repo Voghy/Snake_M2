@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu May 29 11:33:57 2025
+# Process ID         : 21844
+# Current directory  : C:/vivado/Snake_VGA_MIPS
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10996 C:\vivado\Snake_VGA_MIPS\Snake_VGA_MIPS.xpr
+# Log file           : C:/vivado/Snake_VGA_MIPS/vivado.log
+# Journal file       : C:/vivado/Snake_VGA_MIPS\vivado.jou
+# Running On         : Voghy
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+# CPU Frequency      : 2208 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 51382 MB
+# Swap memory        : 3221 MB
+# Total Virtual      : 54603 MB
+# Available Virtual  : 45324 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Vivado/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1196.895 ; gain = 127.773
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.srcs/utils_1/imports/synth_1/vga_sync_demo.dcp with file C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1/mips_tb.dcp
+launch_runs synth_1 -jobs 12
+[Thu May 29 11:34:52 2025] Launched synth_1...
+Run output will be captured here: C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Thu May 29 11:36:17 2025] Launched impl_1...
+Run output will be captured here: C:/vivado/Snake_VGA_MIPS/Snake_VGA_MIPS.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 29 13:00:00 2025...
